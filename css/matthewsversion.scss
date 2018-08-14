@@ -1,0 +1,152 @@
+$color_1: grey;
+$font_family_1: fantasy;
+$background_color_1: #90d6e5;
+$background_color_2: red;
+$background_color_3: #333;
+$background_color_4: #dfdfdf;
+
+@keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes "fadeInAndScale" {
+	from {
+		opacity: 0;
+		transform: scale(0.9, 0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+@keyframes "bounce" {
+	0%,20%,50%,80%,100% {
+		transform: translateY(0);
+	}
+	40%,70% {
+		transform: translateY(-30px);
+	}
+}
+/*# sourceMappingURL=matthewsversion.css.map */
+#metagross {
+	background-color: $background_color_1;
+	font-size: 1.2em;
+	height: 73vh;
+	background-color: $background_color_4;
+}
+h1 {
+	text-align: center;
+}
+li {
+	list-style-type: none;
+	display: inline;
+	a {
+		display: block;
+		color: $color_1;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+}
+.cookie {
+	background-color: $background_color_2;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: $background_color_3;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $font_family_1;
+}
+#trainer-pic {
+	animation: fadeIn;
+	animation-duration: 1s;
+	padding: 2% 4% 2% 4%;
+}
+header {
+	background-color: $background_color_4;
+	height: 89vh;
+	h1 {
+		animation-duration: 1.3s;
+		animation-name: fadeInAndScale;
+		font-family: $font_family_1;
+		font-size: 4.2em;
+	}
+	h3 {
+		opacity: 0;
+		animation: fadeIn;
+		animation-duration: .6s;
+		animation-delay: 2.8s;
+		animation-fill-mode: forwards;
+		font-family: $font_family_1;
+	}
+	h5 {
+		opacity: 0;
+		animation: fadeIn;
+		animation-duration: .6s;
+		animation-delay: 3.2s;
+		animation-fill-mode: forwards;
+		font-family: $font_family_1;
+	}
+}
+#serperior {
+	font-size: 1.2em;
+	padding-top: 4%;
+	background-color: $background_color_4;
+	height: 73vh;
+}
+#ninetales {
+	font-size: 1.2em;
+	padding-top: 4%;
+	background-color: $background_color_4;
+	height: 73vh;
+}
+.row {
+	margin-bottom: 0;
+}
+#metagross-facts {
+	padding-top: 2%;
+	margin-left: 6%;
+}
+#serperior-facts {
+	padding-top: 2%;
+	margin-left: 6%;
+}
+#ninetales-facts {
+	padding-top: 2%;
+	margin-left: 6%;
+}
+details {
+	font-family: $font_family_1;
+	font-size: 1.2em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.pokeFax {
+	font-family: $font_family_1;
+	font-size: .8em;
+}
+.api-stats {
+	font-family: $font_family_1;
+	font-size: 1.2em;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	align-content: center;
+}
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	align-content: center;
+}
